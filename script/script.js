@@ -1,5 +1,7 @@
 var i = 0;
+var j=0;
 var txt = 'Welcome, my name is Daniel Suranta Sitepu';
+var txt2 = "Ok, let's go !";
 var speed = 50;
 
 var d = document.getElementById("overlayBigScreen");
@@ -13,10 +15,10 @@ function typeWriter() {
 }
 
 window.onload = function overlayOn() {
-  document.getElementById("overlay").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
 }
 
 function overlayOff() {
-  document.getElementById("overlay").style.display = "none";
-  this.typeWriter();
+    document.getElementById("overlay").style.display = "none";
+    this.typeWriter();
 }

@@ -17,27 +17,38 @@ body {
 
 #overlayButton:hover {
     background: rgb(5, 15, 40);
+    height: 200vw;
+    width: 200vw;
     -webkit-animation-name: animHover1;
-    -webkit-animation-duration: 0.5s;
+    -webkit-animation-duration: 1s;
     animation-name: animHover1;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
 }
 
 @-webkit-keyframes animHover1 {
     from {
         background: linear-gradient(to right bottom, rgb(0, 250, 255), rgb(35, 105, 255));
+        height: 10vw;
+        width: 10vw;
     }
     to {
         background: rgb(5, 15, 40);
+        height: 200vw;
+        width: 200vw;
+        
     }
 }
 
 @keyframes animHover1 {
     from {
         background: linear-gradient(to right bottom, rgb(0, 250, 255), rgb(35, 105, 255));
+        height: 10vw;
+        width: 10vw;
     }
     to {
         background: rgb(5, 15, 40);
+        height: 200vw;
+        width: 200vw;
     }
 }
 
@@ -53,67 +64,85 @@ body {
     background: linear-gradient(to right bottom, rgb(0, 250, 255), rgb(35, 105, 255));
     color: white;
     border-radius: 50%;
-    z-index: 3;
+    z-index: 4;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     cursor: pointer;
 }
 
-#overlayBigScreen {
+#overlaySpace {
+    position: absolute;
+    height: 11vw;
+    width: 11vw;
+    top: 50%;
+    left: 50%;
+    border-color: rgb(5, 15, 40);
+    background: white;
+    border-radius: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#overlayBorder {
+    position: absolute;
+    height: 12vw;
+    width: 12vw;
+    top: 50%;
+    left: 50%;
+    border-color: rgb(5, 15, 40);
+    background: linear-gradient(to right bottom, rgb(0, 250, 255), rgb(35, 105, 255));
+    border-radius: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.overlayBigScreen {
     position: absolute;
     text-align: center;
     font-size: 20px;
-    padding: 0%;
+    height: 0vw;
+    width: 0vw;
     top: 50%;
     left: 50%;
     border-color: rgb(5, 15, 40);
     background: rgb(5, 15, 40);
     color: white;
     border-radius: 50%;
-    z-index: 2;
+    z-index: 5;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     cursor: pointer;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: ease-in-out;
 }
 
-.oBSBIG {
-    -webkit-animation-name: animBigger1;
-    -webkit-animation-duration: 0.5s;
-    animation-name: animBigger1;
-    animation-duration: 0.5s;
+.overlayBigScreen.big {
+    height: 50vw;
+    width: 50vw;
 }
 
 @-webkit-keyframes animBigger1 {
     from {
-        -webkit-transform: scale( 0);
-        -moz-transform: scale( 0);
-        -o-transform: scale( 0);
-        -ms-transform: scale( 0);
-        transform: scale( 0);
+        height: 0vw;
+        width: 0vw;
     }
     to {
-        -webkit-transform: scale(15);
-        -moz-transform: scale(15);
-        -o-transform: scale(15);
-        -ms-transform: scale(15);
-        transform: scale(15);
+        height: 30vw;
+        width: 30vw;
     }
 }
 
 @keyframes animBigger1 {
     from {
-        -webkit-transform: scale( 0);
-        -moz-transform: scale( 0);
-        -o-transform: scale( 0);
-        -ms-transform: scale( 0);
-        transform: scale( 0);
+        height: 0vw;
+        width: 0vw;
     }
     to {
-        -webkit-transform: scale(15);
-        -moz-transform: scale(15);
-        -o-transform: scale(15);
-        -ms-transform: scale(15);
-        transform: scale(15);
+        height: 30vw;
+        width: 30vw;
     }
 }
 
@@ -132,7 +161,7 @@ body {
 #overlayParagraph {
     position: absolute;
     font-size: 2vw;
-    top: 65%;
+    top: 70%;
     left: 50%;
     color: rgb(5, 15, 40);
     z-index: 3;
