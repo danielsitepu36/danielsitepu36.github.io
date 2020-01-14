@@ -140,7 +140,7 @@ body {
     -ms-transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     #overlayButton {
         height: 20vw;
         width: 20vw;
@@ -152,6 +152,6 @@ body {
     
     #overlayParagraph {
         font-size: 4vw;
-        top: 50%;
+        top: 60%;
     }
 }
