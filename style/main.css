@@ -183,4 +183,14 @@ body {
         font-size: 4vw;
         top: 60%;
     }
+
+    #overlaySpace {
+        height: 22vw;
+        width: 22vw;
+    }
+    
+    #overlayBorder {
+        height: 24vw;
+        width: 24vw;
+    }
 }
