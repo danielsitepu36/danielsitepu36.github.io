@@ -59,22 +59,6 @@ body {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
-    #overlayButton {
-        height: 20vw;
-        width: 20vw;
-    }
-
-    #overlayText {
-        font-size: 6vw;
-    }
-    
-    #overlayParagraph {
-        font-size: 4vw;
-        top: 50%;
-    }
-  }
-
 #overlayBigScreen {
     position: absolute;
     text-align: center;
@@ -154,4 +138,20 @@ body {
     z-index: 3;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 600px) {
+    #overlayButton {
+        height: 20vw;
+        width: 20vw;
+    }
+
+    #overlayText {
+        font-size: 6vw;
+    }
+    
+    #overlayParagraph {
+        font-size: 4vw;
+        top: 50%;
+    }
 }
