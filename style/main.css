@@ -169,6 +169,17 @@ body {
     -ms-transform: translate(-50%, -50%);
 }
 
+#overlayParagraph2 {
+    position: absolute;
+    font-size: 1vw;
+    top: 75%;
+    left: 50%;
+    color: rgb(5, 15, 40);
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
 @media only screen and (max-width: 768px) {
     #overlayButton {
         height: 20vw;
@@ -182,6 +193,11 @@ body {
     #overlayParagraph {
         font-size: 4vw;
         top: 60%;
+    }
+
+    #overlayParagraph2 {
+        font-size: 2vw;
+        top: 65%;
     }
 
     #overlaySpace {
