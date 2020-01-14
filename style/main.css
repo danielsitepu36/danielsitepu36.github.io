@@ -17,8 +17,8 @@ body {
 
 #overlayButton:hover {
     background: rgb(5, 15, 40);
-    height: 300vw;
-    width: 300vw;
+    height: 400vw;
+    width: 400vw;
     -webkit-animation-name: animHover1;
     -webkit-animation-duration: 1.5s;
     animation-name: animHover1;
@@ -33,8 +33,8 @@ body {
     }
     to {
         background: rgb(5, 15, 40);
-        height: 300vw;
-        width: 300vw;
+        height: 400vw;
+        width: 400vw;
     }
 }
 
@@ -46,8 +46,8 @@ body {
     }
     to {
         background: rgb(5, 15, 40);
-        height: 300vw;
-        width: 300vw;
+        height: 400vw;
+        width: 400vw;
     }
 }
 
@@ -133,31 +133,31 @@ body {
 
 @media only screen and (max-width: 768px) {
     #overlayButton {
-        height: 20vw;
-        width: 20vw;
+        height: 30vw;
+        width: 30vw;
     }
 
     #overlayText {
-        font-size: 6vw;
+        font-size: 8vw;
     }
     
     #overlayParagraph {
-        font-size: 4vw;
+        font-size: 6vw;
         top: 60%;
     }
 
     #overlayParagraph2 {
-        font-size: 2vw;
-        top: 65%;
+        font-size: 4vw;
+        top: 62%;
     }
 
     #overlaySpace {
-        height: 22vw;
-        width: 22vw;
+        height: 32vw;
+        width: 32vw;
     }
     
     #overlayBorder {
-        height: 24vw;
-        width: 24vw;
+        height: 34vw;
+        width: 34vw;
     }
 }
