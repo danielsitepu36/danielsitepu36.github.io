@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Daniel Suranta Sitepu</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/main.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="script/script.js"></script>
+
 </head>
 
 <body>
-    <div class="container">
+  <div id="overlay">
+    <div id="overlayBigScreen"></div>
+    <div id="overlayButton" onclick="overlayOff()">
+      <div id="overlayText" onclick="overlayOff()">YES</div></div>
+    <div id="overlayParagraph">Are you ready to reveal me ?</div>
+  </div>
+
+  <div class="container" style="color: rgb(250,195,50);">
     <h1>Oh, hi there !</h1>
-    <p>Welcome, my name is Daniel Suranta Sitepu</p>
-    </div>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+  </div>
 </body>
 
 </html>
