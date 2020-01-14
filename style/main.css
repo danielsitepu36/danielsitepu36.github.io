@@ -138,16 +138,16 @@ body {
     }
 
     #overlayText {
-        font-size: 8vw;
+        font-size: 10vw;
     }
     
     #overlayParagraph {
-        font-size: 6vw;
+        font-size: 4vw;
         top: 60%;
     }
 
     #overlayParagraph2 {
-        font-size: 4vw;
+        font-size: 2vw;
         top: 62%;
     }
 
